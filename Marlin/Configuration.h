@@ -371,9 +371,9 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // Hephestos i3
-  #define DEFAULT_Kp 23.05
-  #define DEFAULT_Ki 2.00
-  #define DEFAULT_Kd 66.47
+  #define DEFAULT_Kp 18.71
+  #define DEFAULT_Ki 1.73
+  #define DEFAULT_Kd 50.57
 
 #endif // PIDTEMP
 
