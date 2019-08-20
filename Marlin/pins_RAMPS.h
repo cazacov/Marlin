@@ -513,26 +513,23 @@
 
     #elif ENABLED(MINIPANEL)
 
-      #define BEEPER_PIN        42
-      // not connected to a pin
-      #define LCD_BACKLIGHT_PIN 65   // backlight LED on A11/D65
+//      #define MISO_PIN      50  // system defined - only needed if using onboard SD card
+      #define MOSI_PIN      51  // system defined
+      #define SCK_PIN       52  // system defined
+//      #define SDSS          53  // only needed if using onboard SD card
 
-      #define DOGLCD_A0         44
-      #define DOGLCD_CS         66
+      #define BEEPER_PIN    37
 
-      // GLCD features
-      //#define LCD_CONTRAST   190
-      // Uncomment screen orientation
-      //#define LCD_SCREEN_ROT_90
-      //#define LCD_SCREEN_ROT_180
-      //#define LCD_SCREEN_ROT_270
+      #define BTN_EN1       31
+      #define BTN_EN2       33
+      #define BTN_ENC       35
 
-      #define BTN_EN1           40
-      #define BTN_EN2           63
-      #define BTN_ENC           59
+      #define KILL_PIN      41  // optional
 
-      #define SD_DETECT_PIN     49
-      #define KILL_PIN          64
+//       #define SD_DETECT_PIN 49  // only needed if using onboard SD card
+
+      #define DOGLCD_CS     25
+      #define DOGLCD_A0     27
 
     #elif ENABLED(ZONESTAR_LCD)
 

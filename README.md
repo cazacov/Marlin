@@ -99,3 +99,21 @@ While we can't prevent the use of this code in products (3D printers, CNC, etc.)
 - [![Travis Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg)](https://travis-ci.org/MarlinFirmware/Marlin)
 - [![Flattr Scott Lahteine](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=thinkhead&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software) - Flattr Scott Lahteine
 - [![Flattr Erik van der Zalm](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software) - Flattr Erik van der Zalm
+
+
+Fix MKS Mini 12864 Low Contrast Issue
+=====================================
+
+As described [here](https://github.com/MarlinFirmware/Marlin/issues/12930) in file 
+
+~\Documents\Arduino\libraries\U8glib\src\clib\u8g_dev_uc1701_mini12864.c line 60 
+
+change
+
+```C
+  0x027,		/* contrast value */
+```
+to  
+```C
+  0x030,		/* contrast value */
+```
