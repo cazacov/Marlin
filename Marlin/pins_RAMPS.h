@@ -138,6 +138,11 @@
   #endif
 #endif
 
+#define X_CS_PIN 63
+#define Y_CS_PIN 40
+#define Z_CS_PIN 42
+#define E0_CS_PIN 65
+
 #if HAS_DRIVER(TMC2208)
   /**
    * TMC2208 stepper drivers
